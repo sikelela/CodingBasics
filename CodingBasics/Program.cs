@@ -6,31 +6,23 @@ namespace CodingBasics
   {
     static void Main(string[] args)
     {
-      var question = "";
+      Console.WriteLine("Questions");
+
+      /*ArraysAndStrings arrays = new ArraysAndStrings();
       Console.WriteLine("Arrays");
-
-      Arrays arrays = new Arrays();
-
       arrays.questionOne("");
+      //arrays.questionTwo("");
       arrays.questionThree("");
       arrays.questionFour("", "");
+      arrays.questionFive("");
+      arrays.questionEight("", "");
+      Console.WriteLine("-----------------------------------------------------------------------");
+      */
 
-      question = Console.ReadLine();
-      switch (question)
-      {
-        case "1":
-          arrays.questionOne("");
-          break;
-        case "3":
-          arrays.questionThree("");
-          break;
-        case "4":
-          arrays.questionFour("", "");
-          break;
-        default:
-          question = Console.ReadLine();
-          break;
-      }
+      OOP oop = new OOP();
+      Console.WriteLine("OOP");
+      oop.questionOne();
+      Console.WriteLine("-----------------------------------------------------------------------");
 
       Console.ReadLine();
     }

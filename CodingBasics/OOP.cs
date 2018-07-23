@@ -1,13 +1,22 @@
-﻿namespace CodingBasics
+﻿using System;
+
+namespace CodingBasics
 {
   class OOP
   {
+
     /// <summary>
     /// Design the data structures for a generic deck of cards. Explain how you would subclass it to implement particular card games.
     /// </summary>
-    /// <param name="word"></param>
-    public void questionOne(string word)
+    public void questionOne()
     {
+      Deck deck = new Deck();
+      var card = deck.DrawCard();
+      Console.WriteLine($"{card.face} of {card.suit}");
+      var card2 = deck.DrawCard();
+      Console.WriteLine($"{card2.face} of {card2.suit} with a hand value of {card2.value()}");
+      var card3 = deck.DrawCard();
+      Console.WriteLine($"{card3.face} of {card3.suit} with a hand value of {card3.value()}");
     }
 
     /// <summary>
@@ -17,40 +26,35 @@
     /// If the TL is not free or not able to handle it, then the call should be escalated to PM. Design the classes and data structures for this problem. 
     /// Implement a method getCallHandler().
     /// </summary>
-    /// <param name="cstylestring"></param>
-    public void questionTwo(char[] cstylestring)
+    public void questionTwo()
     {
     }
 
     /// <summary>
     /// Design a musical juke box using object oriented principles.
     /// </summary>
-    /// <param name="cstylestring"></param>
-    public void questionThree(char[] cstylestring)
+    public void questionThree()
     {
     }
 
     /// <summary>
     /// Design a chess game using object oriented principles.
     /// </summary>
-    /// <param name="cstylestring"></param>
-    public void questionFour(char[] cstylestring)
+    public void questionFour()
     {
     }
 
     /// <summary>
     /// Design the data structures for an online book reader system.
     /// </summary>
-    /// <param name="cstylestring"></param>
-    public void questionFive(char[] cstylestring)
+    public void questionFive()
     {
     }
 
     /// <summary>
     /// Implement a jigsaw puzzle. Design the data structures and explain an algorithm to solve the puzzle.
     /// </summary>
-    /// <param name="cstylestring"></param>
-    public void questionSix(char[] cstylestring)
+    public void questionSix()
     {
     }
 
@@ -58,8 +62,7 @@
     /// Explain how you would design a chat server. In particular, provide details about the various backend components, classes, and methods. 
     /// What would be the hardest problems to solve?
     /// </summary>
-    /// <param name="cstylestring"></param>
-    public void questionSeven(char[] cstylestring)
+    public void questionSeven()
     {
     }
 
@@ -69,8 +72,7 @@
     /// On your turn, you must capture at least one of your opponent’s pieces. The game ends when either user has no more valid moves,
     /// and the win is assigned to the person with the most pieces. Implement the object oriented design for Othello.
     /// </summary>
-    /// <param name="cstylestring"></param>
-    public void questionEight(char[] cstylestring)
+    public void questionEight()
     {
     }
 
@@ -78,16 +80,14 @@
     /// Explain the data structures and algorithms that you would use to design an in-memory file system. 
     /// Illustrate with an example in code where possible.
     /// </summary>
-    /// <param name="cstylestring"></param>
-    public void questionNine(char[] cstylestring)
+    public void questionNine()
     {
     }
 
     /// <summary>
     /// Describe the data structures and algorithms that you would use to implement a garbage collector in C++.
     /// </summary>
-    /// <param name="cstylestring"></param>
-    public void questionTen(char[] cstylestring)
+    public void questionTen()
     {
     }
   }

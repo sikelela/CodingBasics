@@ -41,9 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Arrays.cs" />
+    <Compile Include="ArraysAndStrings.cs" />
     <Compile Include="BitManipulation.cs" />
     <Compile Include="BrainTeaser.cs" />
+    <Compile Include="Cards.cs" />
     <Compile Include="OOP.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

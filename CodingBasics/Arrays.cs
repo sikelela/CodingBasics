@@ -50,7 +50,6 @@ namespace CodingBasics
         end--;
       }
       Console.WriteLine(reverse.ToString());
-
     }
 
     /// <summary>
@@ -118,10 +117,15 @@ namespace CodingBasics
 
     /// <summary>
     /// Write a method to replace all spaces in a string with ‘%20’.
+    /// Redo while moving string  characters with an array
     /// </summary>
     /// <param name="word"></param>
     public void questionFive(string word)
     {
+      Console.WriteLine("Question Five");
+      word = Console.ReadLine();
+      word = word.Replace(" ", "%20");
+      Console.WriteLine(word);
     }
 
     /// <summary>
@@ -142,6 +146,17 @@ namespace CodingBasics
     }
 
     /// <summary>
+    /// isSubstring checks if one word is a substring of another. 
+    /// </summary>
+    /// <param name="s1"></param>
+    /// <param name="s2"></param>
+    /// <returns></returns>
+    private bool isSubstring(string s1, string s2)
+    {
+      return s1.Contains(s2);
+    }
+
+    /// <summary>
     /// Assume you have a method isSubstring which checks if one word is a substring of another. 
     /// Given two strings, s1 and s2, write code to check if s2 is a rotation of s1 using only one call to isSubstring 
     /// (i.e., “waterbottle” is a rotation of “erbottlewat”).
@@ -150,7 +165,25 @@ namespace CodingBasics
     /// <param name="word2"></param>
     public void questionEight(string word1, string word2)
     {
+      Console.WriteLine("Question Eight");
+
+      word1 = Console.ReadLine().ToLower();
+      word2 = Console.ReadLine().ToLower();
+      var rev = "";
+      for (int i = (word1.Length - 1); i > -1; i--)
+      {
+        rev += word1[i];
+      }
+      if (isSubstring(word1, word2))
+      {
+        Console.WriteLine($"{word1} is a rotation of {word2}");
+      }
+      else
+      {
+        Console.WriteLine($"{word1} is not a rotation of {word2}");
+      }
     }
+
   }
 }
 
